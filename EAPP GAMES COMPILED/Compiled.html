@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games Compilation</title>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Navigation styling for switching games */
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .nav button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            background-color: #741d8a;
+            color: rgb(255, 255, 255);
+        }
+        .nav button:hover {
+            background-color: #ec9fcc;
+        }
+
+        /* Hide all games by default */
+        .game-section {
+            display: none;
+            padding: 30px;
+        }
+
+        /* Styles for Connect 4 game */
+        #connect4 {
+            background-color: #e683ac;
+        } 
+        /* (Insert Connect 4 CSS here) */
+
+
+        /* Styles for Tilting game */
+        #tilting {
+            background-color: #ede6e3;
+        }
+        /* (Insert Tilting game CSS here) */
+
+        /* Styles for Gorilla game */
+        #gorilla {
+            background-color: black;
+            color: white;
+        }
+        /* (Insert Gorilla game CSS here) */
+
+
+        /* Styles for Memory game */
+        #memory {
+            background-color: #f4c531;
+        }
+        /* (Insert Memory game CSS here) */
+
+
+        /* Styles for Stick Hero game */
+        #stickhero {
+            background-color: #673ab7;
+        }
+        /* (Insert Stick Hero CSS here) */
+
+
+        /* Styles for Snake game */
+        #snake {
+            background-color: #ff8585;
+            background: linear-gradient(
+                162deg,
+                rgba(255, 133, 133, 1) 0%,
+                rgba(227, 84, 95, 1) 100%
+            );
+        }
+        /* (Insert Snake game CSS here) */
+    </style>
+</head>
+<body>
+    <!-- Navigation to switch between games -->
+    <div class="nav">
+        <button onclick="window.location.href='Connect4.html'">Connect 4</button>
+        <button onclick="window.location.href='TiltingGame.html'">Tilting Game</button>
+        <button onclick="window.location.href='GorillaGame.html'">Gorilla Game</button>
+        <button onclick="window.location.href='MemoryGame.html'">Memory Game</button>
+        <button onclick="window.location.href='SnakeGame.html'">Snake Game</button>
+        <button onclick="window.location.href='StickHero.html'">Stick Hero</button>
+    </div>
+
+    <!-- Connect 4 Game Section -->
+    <div id="connect4" class="game-section">
+        <!-- (Connect 4 HTML structure here) -->
+    </div>
+
+    <!-- Tilting Game Section -->
+    <div id="tilting" class="game-section">
+        <!-- (Tilting game HTML structure here) -->
+    </div>
+
+    <!-- Gorilla Game Section -->
+    <div id="gorilla" class="game-section">
+        <!-- (Gorilla game HTML structure here) -->
+    </div>
+
+    <!-- Memory Game Section -->
+    <div id="memory" class="game-section">
+        <!-- (Memory game HTML structure here) -->
+    </div>
+
+    <!-- Snake Game Section -->
+    <div id="snake" class="game-section">
+        <!-- (Snake game HTML structure here) -->
+    </div>
+
+    <!-- Stick Hero Section -->
+    <div id="stickhero" class="game-section">
+        <!-- (Stick Hero HTML structure here) -->
+    </div>
+
+    <script>
+        // Function to show the selected game and hide others
+        function showGame(gameId) {
+            const games = document.querySelectorAll('.game-section');
+            games.forEach(game => game.style.display = 'none'); // Hide all games
+            document.getElementById(gameId).style.display = 'block'; // Show selected game
+        }
+
+        // Show Connect 4 by default
+        showGame('connect4');
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tilting Maze Game</title>
+    <link rel="stylesheet" href="TiltingGame.css">
+    <script src="TiltingGame.js" defer></script>
+    <style>
+        /* Add navigation styles directly here for convenience */
+        .nav {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            z-index: 1000;
+            padding: 10px 0; /* Added padding for better appearance */
+        }
+        .nav button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            background-color: #416cea;
+            color: white;
+        }
+        .nav button:hover {
+            background-color: #3159a0;
+        }
+        body {
+            padding-top: 60px; /* Space for the fixed navigation */
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+
+    <div id="center">
+        <div id="game">
+            <div id="maze">
+                <div id="end"></div>
+            </div>
+            <div id="joystick">
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div id="joystick-head"></div>
+            </div>
+            <div id="note">
+                Click the joystick to start!
+                <p>Move every ball to the center. Ready for hard mode? Press H</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
